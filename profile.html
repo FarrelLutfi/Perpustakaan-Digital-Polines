@@ -5,22 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Polines Digital Library - Profil Account</title>
     <link rel="stylesheet" href="profile.css">
-    <!-- Menggunakan Font Awesome untuk icon-icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- MAIN CONTENT CONTAINER (Skarang langsung fokus ke konten profil) -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo-section">
+                <div class="logo-placeholder">polines <span class="blu-tag">BLU</span></div>
+            </div>
+            <nav class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Catalog</a>
+                <a href="#" class="active">Repository</a>
+                <a href="#">History</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="profile.html">
+                    <button class="btn-account">My Account</button>
+                </a>
+                <i class="fa-regular fa-bell icon-bell"></i>
+            </div>
+        </div>
+    </header>
+
     <main class="main-container">
         
-        <!-- HERO / USER PROFILE CARD -->
         <section class="profile-card">
             <div class="profile-left">
                 <div class="avatar-container">
                     <div class="avatar-placeholder">
                         <i class="fa-solid fa-user"></i>
                     </div>
-                    <!-- Badge lingkaran kecil di pojok kanan atas foto -->
                     <div class="avatar-badge"></div>
                 </div>
                 <div class="user-info">
@@ -35,7 +51,6 @@
             </div>
         </section>
 
-        <!-- STATS GRID SECTION (4 KOLOM) -->
         <section class="stats-grid">
             <div class="stat-box">
                 <div class="stat-icon icon-blue"><i class="fa-solid fa-book-open"></i></div>
@@ -71,10 +86,8 @@
             </div>
         </section>
 
-        <!-- BOTTOM CONTENT (2 KOLOM: PENGATURAN & AKTIVITAS) -->
         <section class="bottom-grid">
             
-            <!-- PENGATURAN AKUN -->
             <div class="card-section">
                 <h3 class="section-title">Pengaturan Akun</h3>
                 <ul class="settings-list">
@@ -114,7 +127,6 @@
                 </ul>
             </div>
 
-            <!-- AKTIVITAS TERKINI -->
             <div class="card-section">
                 <h3 class="section-title">Aktivitas Terkini</h3>
                 <div class="timeline">
