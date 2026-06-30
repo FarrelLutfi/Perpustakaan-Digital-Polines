@@ -28,7 +28,7 @@
         </div>
     </nav>
 
-<main class="container repository-page">
+    <main class="container repository-page">
         <header class="page-header">
             <h1>Repository</h1>
             <p>Koleksi Karya Ilmiah, Tugas Akhir, Skripsi, dan Publikasi Mahasiswa Polines</p>
@@ -36,10 +36,60 @@
 
         <div class="repo-controls">
             <div class="filter-group-inline">
-                <select><option>Program Studi</option></select>
-                <select><option>Tahun</option></select>
-                <select><option>Jenis</option></select>
-            </div>
+    
+    <div class="custom-dropdown">
+        <label for="drop-prodi" class="dropdown-trigger">
+            <span>Program Studi</span>
+            <span class="arrow">▼</span>
+        </label>
+        <input type="radio" id="drop-prodi" name="repo-filter" class="dropdown-toggle">
+        
+        <div class="dropdown-menu">
+            <h4>Pilih Program Studi</h4>
+            <label><input type="checkbox"> D3 Teknik Informatika (1234)</label>
+            <label><input type="checkbox"> D3 Teknik Mesin (989)</label>
+            <label><input type="checkbox"> D3 Konstruksi Sipil (1087)</label>
+            <label><input type="checkbox"> D3 Akuntansi (1245)</label>
+            <label><input type="checkbox"> D3 Manajemen Pemasaran (1245)</label>
+            <label><input type="checkbox"> Lainnya</label>
+        </div>
+    </div>
+
+    <div class="custom-dropdown">
+        <label for="drop-tahun" class="dropdown-trigger">
+            <span>Tahun</span>
+            <span class="arrow">▼</span>
+        </label>
+        <input type="radio" id="drop-tahun" name="repo-filter" class="dropdown-toggle">
+        
+        <div class="dropdown-menu">
+            <h4>Tahun Terbit</h4>
+            <label><input type="checkbox"> 2026</label>
+            <label><input type="checkbox"> 2025</label>
+            <label><input type="checkbox"> 2023</label>
+            <label><input type="checkbox"> 2022</label>
+            <label><input type="checkbox"> 2019</label>
+        </div>
+    </div>
+
+    <div class="custom-dropdown">
+        <label for="drop-jenis" class="dropdown-trigger">
+            <span>Jenis</span>
+            <span class="arrow">▼</span>
+        </label>
+        <input type="radio" id="drop-jenis" name="repo-filter" class="dropdown-toggle">
+        
+        <div class="dropdown-menu">
+            <h4>Kategori Koleksi</h4>
+            <label><input type="checkbox"> Buku (1234)</label>
+            <label><input type="checkbox"> Tugas Akhir (989)</label>
+            <label><input type="checkbox"> Jurnal (1087)</label>
+            <label><input type="checkbox"> E-Book (1245)</label>
+        </div>
+    </div>
+
+</div>
+            
             <div class="search-bar-inline">
                 <input type="text" placeholder="Cari judul atau penulis">
             </div>
@@ -160,6 +210,6 @@
             <button>20</button>
             <button>›</button>
         </div>
-    </main>
+</main>
 </body>
 </html>
