@@ -36,77 +36,160 @@
         </header>
 
         <ul class="history-tabs">
-            <li class="active">Peminjaman</li>
-            <li>Download</li>
-            <li>Bookmarks</li>
-            <li>Terakhir Dilihat</li>
+            <li class="tab-item active" data-target="group-peminjaman">Peminjaman</li>
+            <li class="tab-item" data-target="group-download">Download</li>
+            <li class="tab-item" data-target="group-bookmarks">Bookmarks</li>
+            <li class="tab-item" data-target="group-terakhir">Terakhir Dilihat</li>
         </ul>
 
         <div class="history-list">
             
-            <div class="history-item">
-                <div class="hist-date-left">Hari ini</div>
-                
-                <div class="hist-main">
-                    <div class="hist-icon icon-download">⬇️</div>
-                    <div class="hist-text">
-                        <h4>Download: Fundamental Cisco & Perhitungan VLSM</h4>
-                        <p>Dr. Budi Santoso</p>
+            <div class="history-group group-peminjaman">
+                <div class="history-item">
+                    <div class="hist-date-left">Hari ini</div>
+                    <div class="hist-main">
+                        <div class="hist-icon icon-borrow">📖</div>
+                        <div class="hist-text">
+                            <h4>Peminjaman: Rekayasa Perangkat Lunak Berorientasi Objek dengan Java</h4>
+                            <p>Kode Buku: TI-0982 | Dipinjam oleh Anda</p>
+                        </div>
+                    </div>
+                    <div class="hist-meta">
+                        <div class="hist-time">
+                            <span>30 Juni 2026</span>
+                            <span>19.00 WIB</span>
+                        </div>
+                        <div class="hist-badge status-active">Dipinjam</div>
                     </div>
                 </div>
-                
-                <div class="hist-meta">
-                    <div class="hist-time">
-                        <span>29 Juni 2026</span>
-                        <span>14.30 WIB</span>
+
+                <div class="history-item">
+                    <div class="hist-date-left">Kemarin</div>
+                    <div class="hist-main">
+                        <div class="hist-icon icon-borrow">📖</div>
+                        <div class="hist-text">
+                            <h4>Pengembalian: Pengantar Jaringan Komputer dan Cisco CCNA</h4>
+                            <p>Kode Buku: EL-0431 | Dikembalikan Tepat Waktu</p>
+                        </div>
                     </div>
-                    <div class="hist-badge">PDF</div>
+                    <div class="hist-meta">
+                        <div class="hist-time">
+                            <span>29 Juni 2026</span>
+                            <span>11.15 WIB</span>
+                        </div>
+                        <div class="hist-badge status-returned">Selesai</div>
+                    </div>
                 </div>
             </div>
 
-            <div class="history-item">
-                <div class="hist-date-left">Hari ini</div>
-                
-                <div class="hist-main">
-                    <div class="hist-icon icon-download">⬇️</div>
-                    <div class="hist-text">
-                        <h4>Download: Panduan Lengkap Oracle SQL & MongoDB</h4>
-                        <p>Siti Aminah, M.Kom</p>
+            <div class="history-group group-download" style="display: none;">
+                <div class="history-item">
+                    <div class="hist-date-left">Hari ini</div>
+                    <div class="hist-main">
+                        <div class="hist-icon icon-download">⬇️</div>
+                        <div class="hist-text">
+                            <h4>Download: Fundamental Cisco & Perhitungan VLSM</h4>
+                            <p>Dr. Budi Santoso</p>
+                        </div>
+                    </div>
+                    <div class="hist-meta">
+                        <div class="hist-time">
+                            <span>29 Juni 2026</span>
+                            <span>14.30 WIB</span>
+                        </div>
+                        <div class="hist-badge">PDF</div>
                     </div>
                 </div>
-                
-                <div class="hist-meta">
-                    <div class="hist-time">
-                        <span>29 Juni 2026</span>
-                        <span>10.15 WIB</span>
+
+                <div class="history-item">
+                    <div class="hist-date-left">Hari ini</div>
+                    <div class="hist-main">
+                        <div class="hist-icon icon-download">⬇️</div>
+                        <div class="hist-text">
+                            <h4>Download: Panduan Lengkap Oracle SQL & MongoDB</h4>
+                            <p>Siti Aminah, M.Kom</p>
+                        </div>
                     </div>
-                    <div class="hist-badge">PDF</div>
+                    <div class="hist-meta">
+                        <div class="hist-time">
+                            <span>29 Juni 2026</span>
+                            <span>10.15 WIB</span>
+                        </div>
+                        <div class="hist-badge">PDF</div>
+                    </div>
+                </div>
+
+                <div class="history-item">
+                    <div class="hist-date-left">Kemarin</div>
+                    <div class="hist-main">
+                        <div class="hist-icon icon-download">⬇️</div>
+                        <div class="hist-text">
+                            <h4>Download: Implementasi WebAR dengan Framework MindAR</h4>
+                            <p>William Strong</p>
+                        </div>
+                    </div>
+                    <div class="hist-meta">
+                        <div class="hist-time">
+                            <span>28 Juni 2026</span>
+                            <span>16.45 WIB</span>
+                        </div>
+                        <div class="hist-badge">PDF</div>
+                    </div>
                 </div>
             </div>
 
-            <div class="history-item">
-                <div class="hist-date-left">Kemarin</div>
-                
-                <div class="hist-main">
-                    <div class="hist-icon icon-download">⬇️</div>
-                    <div class="hist-text">
-                        <h4>Download: Implementasi WebAR dengan Framework MindAR</h4>
-                        <p>William Strong</p>
+            <div class="history-group group-bookmarks" style="display: none;">
+                <div class="history-item">
+                    <div class="hist-date-left">Simpanan</div>
+                    <div class="hist-main">
+                        <div class="hist-icon" style="background-color:#FFF3E0; color:#FF9800;">🔖</div>
+                        <div class="hist-text">
+                            <h4>Tersimpan: Analisis Kinerja Routing Cisco Berbasis VLSM</h4>
+                            <p>Belum dibaca</p>
+                        </div>
+                    </div>
+                    <div class="hist-meta">
+                        <div class="hist-badge">Bookmark</div>
                     </div>
                 </div>
-                
-                <div class="hist-meta">
-                    <div class="hist-time">
-                        <span>28 Juni 2026</span>
-                        <span>16.45 WIB</span>
+            </div>
+
+            <div class="history-group group-terakhir" style="display: none;">
+                <div class="history-item">
+                    <div class="hist-date-left">1 Jam Lalu</div>
+                    <div class="hist-main">
+                        <div class="hist-icon" style="background-color:#F3E5F5; color:#9C27B0;">👁️</div>
+                        <div class="hist-text">
+                            <h4>Melihat Detail: Komparasi Performa Oracle SQL dan MongoDB</h4>
+                            <p>Dibuka via Mobile</p>
+                        </div>
                     </div>
-                    <div class="hist-badge">PDF</div>
+                    <div class="hist-meta">
+                        <div class="hist-badge">Riwayat</div>
+                    </div>
                 </div>
             </div>
 
         </div>
-
     </main>
 
+    <script>
+        document.querySelectorAll('.tab-item').forEach(tab => {
+            tab.addEventListener('click', () => {
+                // 1. Hilangkan kelas active dari seluruh tombol tab
+                document.querySelectorAll('.tab-item').forEach(item => item.classList.remove('active'));
+                
+                // 2. Tambahkan kelas active ke tombol tab yang sedang diklik
+                tab.classList.add('active');
+                
+                // 3. Sembunyikan semua kelompok riwayat data terlebih dahulu
+                document.querySelectorAll('.history-group').forEach(group => group.style.display = 'none');
+                
+                // 4. Cari dan munculkan kelompok data yang sesuai dengan target tab
+                const targetClass = tab.getAttribute('data-target');
+                document.querySelector('.' + targetClass).style.display = 'block';
+            });
+        });
+    </script>
 </body>
 </html>
