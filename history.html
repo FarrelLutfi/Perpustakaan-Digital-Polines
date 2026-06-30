@@ -137,22 +137,53 @@
                     </div>
                 </div>
             </div>
-
+            
             <div class="history-group group-bookmarks" style="display: none;">
-                <div class="history-item">
-                    <div class="hist-date-left">Simpanan</div>
-                    <div class="hist-main">
-                        <div class="hist-icon" style="background-color:#FFF3E0; color:#FF9800;">🔖</div>
-                        <div class="hist-text">
-                            <h4>Tersimpan: Analisis Kinerja Routing Cisco Berbasis VLSM</h4>
-                            <p>Belum dibaca</p>
-                        </div>
-                    </div>
-                    <div class="hist-meta">
-                        <div class="hist-badge">Bookmark</div>
-                    </div>
+    
+    <div class="bookmark-header-actions">
+        <h3>Koleksi Saya</h3>
+        <button class="btn-create-folder">
+            <i class="bi bi-folder-plus"></i> Buat Koleksi Baru
+        </button>
+    </div>
+
+    <div class="bookmark-folders-grid">
+        
+        <div class="folder-card">
+            <div class="folder-icon-wrapper">
+                <span class="folder-emoji">📁</span>
+                <span class="item-count-badge">4</span>
+            </div>
+            <div class="folder-info">
+                <h4>Referensi Riset WebAR & PBO</h4>
+                <p>Terakhir diupdate: Hari ini</p>
+            </div>
+        </div>
+
+        <div class="folder-card">
+            <div class="folder-icon-wrapper">
+                <span class="folder-emoji">📁</span>
+                <span class="item-count-badge">2</span>
+            </div>
+            <div class="folder-info">
+                <h4>Materi Jaringan Cisco & VLSM</h4>
+                <p>Terakhir diupdate: Kemarin</p>
+            </div>
+        </div>
+
+        <div class="folder-card">
+            <div class="folder-icon-wrapper">
+                <span class="folder-emoji">📁</span>
+                <span class="item-count-badge">7</span>
+            </div>
+            <div class="folder-info">
+                <h4>Tugas Basis Data</h4>
+                <p>Terakhir diupdate: 28 Juni 2026</p>
                 </div>
             </div>
+
+        </div>
+    </div>
 
             <div class="history-group group-terakhir" style="display: none;">
                 <div class="history-item">
@@ -176,16 +207,12 @@
     <script>
         document.querySelectorAll('.tab-item').forEach(tab => {
             tab.addEventListener('click', () => {
-                // 1. Hilangkan kelas active dari seluruh tombol tab
                 document.querySelectorAll('.tab-item').forEach(item => item.classList.remove('active'));
                 
-                // 2. Tambahkan kelas active ke tombol tab yang sedang diklik
                 tab.classList.add('active');
                 
-                // 3. Sembunyikan semua kelompok riwayat data terlebih dahulu
                 document.querySelectorAll('.history-group').forEach(group => group.style.display = 'none');
                 
-                // 4. Cari dan munculkan kelompok data yang sesuai dengan target tab
                 const targetClass = tab.getAttribute('data-target');
                 document.querySelector('.' + targetClass).style.display = 'block';
             });
