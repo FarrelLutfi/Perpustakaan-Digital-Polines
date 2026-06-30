@@ -1,0 +1,139 @@
+/* ==========================================================================
+   GAYA KHUSUS HALAMAN HISTORY (history.css)
+   ========================================================================== */
+
+.history-page {
+    padding: 40px 20px 80px;
+    max-width: 1000px; /* Lebar dibatasi agar daftar tidak terlalu memanjang ke kanan */
+}
+
+.page-header {
+    margin-bottom: 40px;
+}
+
+.page-header h1 {
+    font-size: 36px;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+}
+
+.page-header p {
+    font-size: 15px;
+    color: var(--text-muted);
+}
+
+/* ================== TABS NAVIGASI ================== */
+.history-tabs {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    border-bottom: 1px solid #E0E7EE;
+    padding-bottom: 16px;
+    margin-bottom: 30px;
+}
+
+.history-tabs li {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: color 0.2s;
+    position: relative;
+}
+
+.history-tabs li:hover {
+    color: var(--primary-blue);
+}
+
+.history-tabs li.active {
+    color: var(--text-dark);
+}
+
+/* ================== DAFTAR RIWAYAT ================== */
+.history-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.history-item {
+    display: flex;
+    align-items: center;
+    padding: 24px 0;
+    border-bottom: 1px solid #F0F4F8;
+    gap: 24px;
+    transition: background-color 0.2s;
+}
+
+.history-item:hover {
+    background-color: #FAFAFA; /* Efek sorot tipis saat di-hover */
+}
+
+/* Kolom Tanggal Kiri */
+.hist-date-left {
+    width: 100px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+/* Kolom Utama (Ikon + Teks) */
+.hist-main {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 1; /* Mengambil sisa ruang tengah */
+}
+
+.hist-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.icon-download {
+    background-color: #E8F5E9; /* Hijau pudar */
+    color: #4CAF50; /* Hijau cerah */
+}
+
+.hist-text h4 {
+    font-size: 15px;
+    color: var(--text-dark);
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.hist-text p {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+/* Kolom Kanan (Waktu & Badge) */
+.hist-meta {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.hist-time {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Meratakan teks waktu ke kanan */
+    font-size: 11px;
+    color: var(--text-muted);
+    gap: 4px;
+    font-weight: 500;
+}
+
+.hist-badge {
+    background-color: #F0F4F8;
+    color: var(--text-muted);
+    padding: 6px 16px;
+    border-radius: 16px;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}

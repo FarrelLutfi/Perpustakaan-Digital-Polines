@@ -1,0 +1,53 @@
+/* Layout Repository */
+.repository-page { padding: 40px 20px; }
+
+.repo-controls {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.filter-group-inline { display: flex; gap: 10px; }
+.filter-group-inline select { padding: 10px; border: 1px solid #E0E7EE; border-radius: 6px; }
+
+.search-bar-inline input { padding: 10px; width: 300px; border: 1px solid #E0E7EE; border-radius: 6px; }
+
+/* Tabel Styling */
+.repo-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+    border: 1px solid #E0E7EE;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.repo-table th, .repo-table td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #E0E7EE;
+    font-size: 14px;
+}
+
+.repo-table th { background-color: #F8FAFC; color: var(--text-muted); }
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 30px;
+}
+
+.pagination button {
+    padding: 8px 12px;
+    border: 1px solid #E0E7EE;
+    background: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.pagination button.active {
+    background: var(--primary-blue);
+    color: white;
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog - E-Perpustakaan Polines</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="catalog.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-placeholder">🏛️</div>
+                <h2>polines</h2>
+                <span class="badge-blu">BLU</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html" class="active">Catalog</a></li>
+                <li><a href="repository.html">Repository</a></li>
+                <li><a href="history.html">History</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="btn-yellow">My Account</a>
+                <span class="icon-bell">🔔</span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="catalog-page container">
+        
+        <header class="page-header">
+            <h1>Catalog</h1>
+            <p>Tentukan Koleksi cetak yang tersedia di perpustakaan.</p>
+        </header>
+
+        <div class="search-controls">
+            <div class="search-bar-wide">
+                <span class="icon-search">🔍</span>
+                <input type="text" placeholder="Masukan judul atau pengarang">
+                <button class="btn-search-yellow">Cari →</button>
+            </div>
+            
+            <div class="sort-filter-actions">
+                <div class="sort-box">
+                    <span class="sort-label">Sort by:</span>
+                    <select class="sort-select">
+                        <option>Terbaru</option>
+                        <option>Terpopuler</option>
+                        <option>A-Z</option>
+                    </select>
+                </div>
+                <button class="btn-filter">
+                    <span class="icon-filter">⚲</span> Filter
+                </button>
+            </div>
+        </div>
+
+        <div class="catalog-content">
+            
+            <aside class="filter-sidebar">
+                <h3>Filter Koleksi</h3>
+                
+                <div class="filter-group">
+                    <h4>Kategori</h4>
+                    <label class="checkbox-label"><input type="checkbox"> Buku (1234)</label>
+                    <label class="checkbox-label"><input type="checkbox"> Tugas Akhir (989)</label>
+                    <label class="checkbox-label"><input type="checkbox"> Jurnal (1087)</label>
+                    <label class="checkbox-label"><input type="checkbox"> E-Book (1245)</label>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Jurusan</h4>
+                    <label class="checkbox-label"><input type="checkbox"> Teknik Elektro (1234)</label>
+                    <label class="checkbox-label"><input type="checkbox"> Teknik Mesin (989)</label>
+                    <label class="checkbox-label"><input type="checkbox"> Teknik Sipil (1087)</label>
+                    <label class="checkbox-label"><input type="checkbox"> Akuntansi (1245)</label>
+                    <label class="checkbox-label"><input type="checkbox"> Administrasi Bisnis (1245)</label>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Program Studi</h4>
+                    <label class="checkbox-label"><input type="checkbox"> D3 Teknik Informatika (1234)</label>
+                    <label class="checkbox-label"><input type="checkbox"> D3 Teknik Mesin (989)</label>
+                    <label class="checkbox-label"><input type="checkbox"> D3 Konstruksi Sipil (1087)</label>
+                    <label class="checkbox-label"><input type="checkbox"> D3 Akuntansi (1245)</label>
+                    <label class="checkbox-label"><input type="checkbox"> D3 Manajemen Pemasaran (1245)</label>
+                    <label class="checkbox-label"><input type="checkbox"> Lainnya</label>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Tahun Terbit</h4>
+                    <label class="checkbox-label"><input type="checkbox"> 2019</label>
+                    <label class="checkbox-label"><input type="checkbox"> 2022</label>
+                    <label class="checkbox-label"><input type="checkbox"> 2023</label>
+                    <label class="checkbox-label"><input type="checkbox"> 2024</label>
+                    <label class="checkbox-label"><input type="checkbox"> 2025</label>
+                    <label class="checkbox-label"><input type="checkbox"> Lainnya</label>
+                </div>
+            </aside>
+
+            <section class="book-results">
+                <div class="book-grid-layout">
+                    <div class="book-card-item">
+                        <div class="book-cover-placeholder blue-bg">T. Elektro</div>
+                        <h4 class="book-title">Sistem Kendali Otomatis</h4>
+                        <p class="book-author">Ir. Budi Santoso</p>
+                        <span class="book-status available">Tersedia</span>
+                    </div>
+                    <div class="book-card-item">
+                        <div class="book-cover-placeholder dark-bg">T. Mesin</div>
+                        <h4 class="book-title">Termodinamika Terapan</h4>
+                        <p class="book-author">Prof. Dr. Hendra</p>
+                        <span class="book-status borrowed">Dipinjam</span>
+                    </div>
+                    <div class="book-card-item">
+                        <div class="book-cover-placeholder yellow-bg">Akuntansi</div>
+                        <h4 class="book-title">Pengantar Akuntansi 1</h4>
+                        <p class="book-author">Siti Aminah, S.E.</p>
+                        <span class="book-status available">Tersedia</span>
+                    </div>
+                    <div class="book-card-item">
+                        <div class="book-cover-placeholder cyan-bg">T. Sipil</div>
+                        <h4 class="book-title">Mekanika Tanah Dasar</h4>
+                        <p class="book-author">Ir. Joko Widodo, M.T.</p>
+                        <span class="book-status available">Tersedia</span>
+                    </div>
+                    <div class="book-card-item">
+                        <div class="book-cover-placeholder blue-bg">T. Elektro</div>
+                        <h4 class="book-title">Mikrokontroler Arduino</h4>
+                        <p class="book-author">Ahmad Fauzi, S.T.</p>
+                        <span class="book-status available">Tersedia</span>
+                    </div>
+                    <div class="book-card-item">
+                        <div class="book-cover-placeholder dark-bg">Bisnis</div>
+                        <h4 class="book-title">Manajemen Pemasaran</h4>
+                        <p class="book-author">Dr. Rina Wati</p>
+                        <span class="book-status available">Tersedia</span>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col brand-col">
+                <div class="footer-logo">
+                    <span class="icon-logo" style="font-size: 48px;">🛡️</span> 
+                </div>
+                <h3>UPA Perpustakaan</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalog.html">Catalog</a></li>
+                    <li><a href="#">E-Book</a></li>
+                    <li><a href="#">Repository</a></li>
+                    <li><a href="#">Journals</a></li>
+                    <li><a href="#">History</a></li>
+                </ul>
+            </div>
+            <div class="footer-col about-col">
+                <h3>Tentang Kami</h3>
+                <p>Perpustakaan Politeknik Negeri Semarang (Polines) adalah pusat informasi akademik yang mendukung kegiatan pendidikan, penelitian, dan pengabdian masyarakat di lingkungan Polines. Dengan koleksi yang beragam, baik dalam bentuk cetak maupun digital, perpustakaan ini menyediakan akses informasi yang relevan bagi mahasiswa, dosen, dan staf.</p>
+            </div>
+            <div class="footer-col contact-col">
+                <h3>Jam Buka Perpustakaan</h3>
+                <div class="schedule">
+                    <p>Senin - Kamis:<br>07.30 - 16.00 WIB</p>
+                    <p>Jum'at:<br>07.30 - 16.30 WIB</p>
+                </div>
+                <ul class="contact-list">
+                    <li><span class="contact-icon">🪪</span> NPP. 3374102C0000002</li>
+                    <li><span class="contact-icon">💬</span> 0895340731030</li>
+                    <li><span class="contact-icon">📷</span> Follow Us</li>
+                    <li><span class="contact-icon">▶️</span> Subscribe</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 — Perpustakaan Politeknik Negeri Semarang</p>
+        </div>
+    </footer>
+
+</body>
+</html>

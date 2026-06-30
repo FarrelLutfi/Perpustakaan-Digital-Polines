@@ -1,0 +1,217 @@
+/* ==========================================================================
+   GAYA KHUSUS HALAMAN CATALOG (catalog.css)
+   ========================================================================== */
+
+.catalog-page {
+    padding: 40px 20px 80px;
+}
+
+/* Melebarkan container khusus halaman katalog agar 4 kolom buku tidak sempit */
+.catalog-page.container {
+    max-width: 1280px;
+}
+
+/* Header Catalog */
+.page-header { 
+    margin-bottom: 24px; 
+}
+.page-header h1 { 
+    font-size: 32px; 
+    color: var(--text-dark); 
+    margin-bottom: 8px; 
+}
+.page-header p { 
+    font-size: 14px; 
+    color: var(--text-muted); 
+}
+
+/* Kontrol Pencarian & Filter */
+.search-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+    gap: 20px;
+}
+
+.search-bar-wide {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border: 1px solid #E0E7EE;
+    border-radius: 8px;
+    padding: 4px 4px 4px 16px;
+    background: var(--white);
+}
+
+.search-bar-wide input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.btn-search-yellow {
+    background-color: var(--accent-yellow);
+    border: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--text-dark);
+}
+
+.sort-filter-actions { 
+    display: flex; 
+    align-items: center; 
+    gap: 16px; 
+}
+
+.sort-box { 
+    display: flex; 
+    align-items: center; 
+    gap: 8px; 
+    font-size: 13px; 
+    color: var(--text-muted); 
+}
+
+.sort-select { 
+    border: 1px solid #E0E7EE; 
+    padding: 8px 12px; 
+    border-radius: 6px; 
+    outline: none; 
+    cursor: pointer; 
+    background: var(--white); 
+}
+
+.btn-filter { 
+    display: flex; 
+    align-items: center; 
+    gap: 8px; 
+    background-color: #E3F2FD; 
+    color: var(--primary-blue); 
+    border: 1px solid #BBDEFB; 
+    padding: 8px 16px; 
+    border-radius: 6px; 
+    font-weight: bold; 
+    cursor: pointer; 
+}
+
+/* Grid Layout Catalog (Sidebar Kiri + Konten Kanan) */
+.catalog-content {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 32px;
+}
+
+/* Sidebar Filter Kiri */
+.filter-sidebar {
+    background-color: #FAFAFA;
+    border: 1px solid #E0E7EE;
+    border-radius: 8px;
+    padding: 24px;
+    align-self: start;
+}
+
+.filter-sidebar h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: var(--primary-blue);
+    padding-bottom: 12px;
+    border-bottom: 1px solid #E0E7EE;
+}
+
+.filter-group { 
+    margin-bottom: 24px; 
+}
+
+.filter-group h4 { 
+    font-size: 14px; 
+    margin-bottom: 12px; 
+    color: var(--text-dark); 
+}
+
+.checkbox-label { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    font-size: 13px; 
+    color: var(--text-muted); 
+    margin-bottom: 10px; 
+    cursor: pointer; 
+}
+
+/* Grid Hasil Buku Kanan */
+.book-grid-layout {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.book-card-item {
+    background: var(--white);
+    border: 1px solid #E0E7EE;
+    border-radius: 8px;
+    padding: 12px; /* Padding dikurangi dari 16px agar isi lebih lega */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.book-card-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.book-cover-placeholder {
+    width: 100%;
+    height: 190px; /* Tinggi kover dikurangi (sebelumnya 240px) agar proporsional dengan lebarnya */
+    border-radius: 6px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+/* Warna placeholder kover buku */
+.blue-bg { background-color: var(--primary-blue); }
+.dark-bg { background-color: var(--dark-blue); }
+.yellow-bg { background-color: #F57F17; }
+.cyan-bg { background-color: var(--accent-cyan); }
+
+/* Tipografi Kartu Buku */
+.book-title { 
+    font-size: 14px; /* Sedikit dikecilkan */
+    color: var(--text-dark); 
+    margin-bottom: 4px; 
+    line-height: 1.4; 
+}
+
+.book-author { 
+    font-size: 12px; 
+    color: va   r(--text-muted); 
+    margin-bottom: 12px; 
+    flex-grow: 1; 
+}
+
+.book-status { 
+    font-size: 11px; 
+    padding: 4px 8px; 
+    border-radius: 4px; 
+    font-weight: bold; 
+    align-self: flex-start; 
+}
+
+.book-status.available { 
+    background-color: #E8F5E9; 
+    color: #2E7D32; 
+}
+.book-status.borrowed { 
+    background-color: #FFEBEE; 
+    color: #C62828; 
+}

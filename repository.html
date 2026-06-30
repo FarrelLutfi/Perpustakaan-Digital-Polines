@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repository - Polines Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="repository.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-placeholder">🏛️</div>
+                <h2>polines</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="repository.html" class="active">Repository</a></li>
+                <li><a href="history.html">History</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="btn-yellow">My Account</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container repository-page">
+        <header class="page-header">
+            <h1>Repository</h1>
+            <p>Koleksi Karya Ilmiah, Tugas Akhir, Skripsi, dan Publikasi Mahasiswa Polines</p>
+        </header>
+
+        <div class="repo-controls">
+            <div class="filter-group-inline">
+                <select><option>Program Studi</option></select>
+                <select><option>Tahun</option></select>
+                <select><option>Jenis</option></select>
+            </div>
+            <div class="search-bar-inline">
+                <input type="text" placeholder="Cari judul atau penulis">
+            </div>
+        </div>
+
+        <table class="repo-table">
+            <thead>
+                <tr>
+                    <th>Judul</th>
+                    <th>Penulis</th>
+                    <th>Program Studi</th>
+                    <th>Tahun</th>
+                    <th>Jenis</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#">Analisis Kelayakan Finansial Proyek Konstruksi X</a></td>
+                    <td>Rudy Nur Rokhim</td>
+                    <td>Teknik Sipil</td>
+                    <td>2025</td>
+                    <td>Tugas Akhir</td>
+                    <td class="action-column">
+                        <button class="btn-action" title="Lihat Detail">👁️</button>
+                        <button class="btn-action" title="Unduh">⬇️</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="#">Implementasi WebAR dengan Framework MindAR untuk Media Pembelajaran Interaktif</a></td>
+                    <td>Farrel Lutfi Pranowo</td>
+                    <td>Teknik Elektro</td>
+                    <td>2026</td>
+                    <td>Tugas Akhir</td>
+                    <td class="action-column">
+                        <button class="btn-action" title="Lihat Detail">👁️</button>
+                        <button class="btn-action" title="Unduh">⬇️</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="#">Perancangan UI/UX Dashboard Monitoring Akademik Menggunakan Microsoft Excel</a></td>
+                    <td>Farrel Lutfi Pranowo</td>
+                    <td>Teknik Elektro</td>
+                    <td>2026</td>
+                    <td>Proyek Akhir</td>
+                    <td class="action-column">
+                        <button class="btn-action" title="Lihat Detail">👁️</button>
+                        <button class="btn-action" title="Unduh">⬇️</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="#">Analisis Kinerja Routing Cisco Berbasis VLSM pada Jaringan Skala Menengah</a></td>
+                    <td>Budi Santoso</td>
+                    <td>Teknik Elektro</td>
+                    <td>2026</td>
+                    <td>Jurnal</td>
+                    <td class="action-column">
+                        <button class="btn-action" title="Lihat Detail">👁️</button>
+                        <button class="btn-action" title="Unduh">⬇️</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="#">Komparasi Performa Oracle SQL dan MongoDB dalam Sistem Manajemen Basis Data</a></td>
+                    <td>Siti Aminah</td>
+                    <td>Teknik Informatika</td>
+                    <td>2025</td>
+                    <td>Skripsi</td>
+                    <td class="action-column">
+                        <button class="btn-action" title="Lihat Detail">👁️</button>
+                        <button class="btn-action" title="Unduh">⬇️</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="#">Kajian Filosofis Nilai-Nilai Dasar Negara dalam Regulasi Pertambangan Nasional</a></td>
+                    <td>Wicaksono Saputro</td>
+                    <td>Administrasi Bisnis</td>
+                    <td>2025</td>
+                    <td>Makalah</td>
+                    <td class="action-column">
+                        <button class="btn-action" title="Lihat Detail">👁️</button>
+                        <button class="btn-action" title="Unduh">⬇️</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="#">Strategi Pengembangan Organisasi Mahasiswa dalam Divisi Penalaran HME</a></td>
+                    <td>Ahmad Fauzi</td>
+                    <td>Teknik Elektro</td>
+                    <td>2026</td>
+                    <td>Laporan Riset</td>
+                    <td class="action-column">
+                        <button class="btn-action" title="Lihat Detail">👁️</button>
+                        <button class="btn-action" title="Unduh">⬇️</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="pagination">
+            <button>‹</button>
+            <button class="active">1</button>
+            <button>2</button>
+            <button>3</button>
+            <span>...</span>
+            <button>20</button>
+            <button>›</button>
+        </div>
+    </main>
+
+</body>
+</html>
