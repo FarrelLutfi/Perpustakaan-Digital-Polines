@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polines Digital Library - Profil Account</title>
+    <link rel="stylesheet" href="profile.css">
+    <!-- Menggunakan Font Awesome untuk icon-icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- MAIN CONTENT CONTAINER (Skarang langsung fokus ke konten profil) -->
+    <main class="main-container">
+        
+        <!-- HERO / USER PROFILE CARD -->
+        <section class="profile-card">
+            <div class="profile-left">
+                <div class="avatar-container">
+                    <div class="avatar-placeholder">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <!-- Badge lingkaran kecil di pojok kanan atas foto -->
+                    <div class="avatar-badge"></div>
+                </div>
+                <div class="user-info">
+                    <h1>Hanif Nur Mirza</h1>
+                    <p class="nim"><i class="fa-regular fa-id-card"></i> 20041945189</p>
+                    <span class="prodi-badge">Teknik Informatika - D3</span>
+                </div>
+            </div>
+            <div class="profile-right">
+                <button class="btn-edit"><i class="fa-regular fa-pen-to-square"></i> Edit Profil</button>
+                <button class="btn-download"><i class="fa-solid fa-download"></i> Unduh Kartu</button>
+            </div>
+        </section>
+
+        <!-- STATS GRID SECTION (4 KOLOM) -->
+        <section class="stats-grid">
+            <div class="stat-box">
+                <div class="stat-icon icon-blue"><i class="fa-solid fa-book-open"></i></div>
+                <div class="stat-data">
+                    <h2>12</h2>
+                    <p>Buku Dipinjam</p>
+                </div>
+                <span class="stat-label-corner">Buku</span>
+            </div>
+            <div class="stat-box">
+                <div class="stat-icon icon-lightblue"><i class="fa-solid fa-download"></i></div>
+                <div class="stat-data">
+                    <h2>12</h2>
+                    <p>Unduhan</p>
+                </div>
+                <span class="stat-label-corner">Unduhan</span>
+            </div>
+            <div class="stat-box">
+                <div class="stat-icon icon-bookmark"><i class="fa-regular fa-bookmark"></i></div>
+                <div class="stat-data">
+                    <h2>12</h2>
+                    <p>Bookmarks</p>
+                </div>
+                <span class="stat-label-corner">Favorit</span>
+            </div>
+            <div class="stat-box">
+                <div class="stat-icon icon-history"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                <div class="stat-data">
+                    <h2>12</h2>
+                    <p>Riwayat Akses</p>
+                </div>
+                <span class="stat-label-corner">Sesi</span>
+            </div>
+        </section>
+
+        <!-- BOTTOM CONTENT (2 KOLOM: PENGATURAN & AKTIVITAS) -->
+        <section class="bottom-grid">
+            
+            <!-- PENGATURAN AKUN -->
+            <div class="card-section">
+                <h3 class="section-title">Pengaturan Akun</h3>
+                <ul class="settings-list">
+                    <li>
+                        <div class="setting-item">
+                            <i class="fa-solid fa-earth-asia list-icon"></i>
+                            <div>
+                                <span class="setting-name">Bahasa</span>
+                                <span class="setting-sub">Bahasa Indonesia</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="setting-item">
+                            <i class="fa-regular fa-bell list-icon"></i>
+                            <div>
+                                <span class="setting-name">Preferensi Notification</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="setting-item">
+                            <i class="fa-solid fa-shield-halved list-icon"></i>
+                            <div>
+                                <span class="setting-name">Privasi & Keamanan</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="setting-item logout-item">
+                            <i class="fa-solid fa-arrow-right-from-bracket list-icon text-danger"></i>
+                            <div>
+                                <span class="setting-name text-danger">Keluar</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- AKTIVITAS TERKINI -->
+            <div class="card-section">
+                <h3 class="section-title">Aktivitas Terkini</h3>
+                <div class="timeline">
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-badge badge-bookmark"><i class="fa-regular fa-bookmark"></i></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h4>Artificial Intelligence</h4>
+                                <span class="time">10:30 WIB</span>
+                            </div>
+                            <p>William Strong</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-badge badge-download"><i class="fa-solid fa-download"></i></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h4>Download: Artificial Intelligence</h4>
+                                <span class="time">10:30 WIB</span>
+                            </div>
+                            <p>William Strong</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-badge badge-date"><i class="fa-regular fa-calendar"></i></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h4>Artificial Intelligence</h4>
+                                <span class="time">10:30 WIB</span>
+                            </div>
+                            <p>William Strong</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+</html>

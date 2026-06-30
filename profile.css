@@ -1,0 +1,349 @@
+/* RESET & BASE STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa; /* Background abu-abu tipis web modern */
+    color: #333;
+    padding: 40px 0; /* Memberi jarak atas dan bawah halaman */
+}
+
+/* MAIN CONTAINER (Membuat konten terpusat rapi di tengah layar) */
+.main-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* PROFILE CARD */
+.profile-card {
+    background-color: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+}
+
+.profile-left {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.avatar-container {
+    position: relative;
+    width: 90px;
+    height: 90px;
+}
+
+.avatar-placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: #e2e8f0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #a0aec0;
+    overflow: hidden;
+    border: 3px solid #cbd5e1;
+}
+
+.avatar-badge {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 24px;
+    height: 24px;
+    background-color: #38bdf8;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.user-info h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 5px;
+}
+
+.user-info .nim {
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.prodi-badge {
+    background-color: #e0f2fe;
+    color: #0284c7;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.profile-right {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-edit {
+    background-color: #fff;
+    border: 1px solid #0284c7;
+    color: #0284c7;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s;
+}
+
+.btn-edit:hover {
+    background-color: #f0f9ff;
+}
+
+.btn-download {
+    background-color: #ffcc00; /* Kuning Amber persis gambar figma */
+    border: none;
+    color: #002d62;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.2s;
+}
+
+.btn-download:hover {
+    background-color: #e6b800;
+}
+
+/* STATS GRID */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.stat-box {
+    background-color: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+}
+
+.stat-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.icon-blue { background-color: #e0f2fe; color: #0284c7; }
+.icon-lightblue { background-color: #e0f2fe; color: #38bdf8; }
+.icon-bookmark { background-color: #e0f2fe; color: #3b82f6; }
+.icon-history { background-color: #e0f2fe; color: #6366f1; }
+
+.stat-data h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1e293b;
+    line-height: 1.2;
+}
+
+.stat-data p {
+    font-size: 13px;
+    color: #64748b;
+}
+
+.stat-label-corner {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    font-size: 11px;
+    color: #94a3b8;
+}
+
+/* BOTTOM TWO COLUMNS GRID */
+.bottom-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.card-section {
+    background-color: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 20px;
+}
+
+/* SETTINGS LIST */
+.settings-list {
+    list-style: none;
+}
+
+.settings-list li {
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.settings-list li:last-child {
+    border-bottom: none;
+}
+
+.setting-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.setting-item:hover {
+    background-color: #f8fafc;
+}
+
+.list-icon {
+    font-size: 18px;
+    color: #64748b;
+    width: 24px;
+    text-align: center;
+}
+
+.setting-name {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #334155;
+}
+
+.setting-sub {
+    display: block;
+    font-size: 12px;
+    color: #94a3b8;
+    margin-top: 2px;
+}
+
+.text-danger { color: #ef4444 !important; }
+.logout-item { margin-top: 10px; }
+
+/* TIMELINE (AKTIVITAS TERKINI) */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 20px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    bottom: 20px;
+    width: 2px;
+    background-color: #cbd5e1;
+    z-index: 1;
+}
+
+.timeline-item {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 2;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-badge {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    background-color: #fff;
+    border: 2px solid;
+}
+
+.badge-bookmark { border-color: #3b82f6; color: #3b82f6; background-color: #eff6ff; }
+.badge-download { border-color: #22c55e; color: #22c55e; background-color: #f0fdf4; }
+.badge-date { border-color: #f59e0b; color: #f59e0b; background-color: #fffbeb; }
+
+.timeline-content {
+    flex-grow: 1;
+    margin-top: -2px;
+}
+
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timeline-header h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.timeline-header .time {
+    font-size: 11px;
+    color: #94a3b8;
+}
+
+.timeline-content p {
+    font-size: 13px;
+    color: #64748b;
+    margin-top: 3px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .bottom-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 768px) {
+    .profile-card { flex-direction: column; align-items: flex-start; gap: 20px; }
+    .stats-grid { grid-template-columns: 1fr; }
+}
