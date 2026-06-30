@@ -138,8 +138,8 @@
 }
 
 .hist-badge.status-active {
-    background-color: #FEF3C7; 
-    color: #D97706;
+    background-color: #FFEBEE; 
+    color: #C62828;
 }
 
 .hist-badge.status-returned {
@@ -198,7 +198,7 @@
 }
 
 .folder-card:hover {
-    transform: translateY(-4px); 0
+    transform: translateY(-4px); 
     border-color: #CBD5E1;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
 }
