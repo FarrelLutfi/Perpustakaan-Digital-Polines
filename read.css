@@ -29,6 +29,7 @@
     font-weight: 600;
     margin-bottom: 16px;
     transition: color 0.2s;
+    margin-left: 25px;
 }
 
 .back-link:hover {

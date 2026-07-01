@@ -243,3 +243,18 @@
     font-size: 12px;
     color: var(--text-muted, #64748B);
 }
+
+/* ================== WARNA KHUSUS TAB BOOKMARKS ================== */
+
+/* Ikon Bookmark Bulat (Biru) */
+.icon-bookmark-list {
+    background-color: #EFF6FF; /* Biru sangat muda */
+    color: #3B82F6; /* Biru cerah */
+    border: 1px solid #DBEAFE;
+}
+
+/* Warna Lencana (Badge) khusus E-Book */
+.hist-badge.badge-ebook {
+    background-color: #EFF6FF;
+    color: #3B82F6;
+}
