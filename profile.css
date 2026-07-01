@@ -31,20 +31,36 @@ body {
     padding: 0 20px;
 }
 
-.logo-placeholder {
-    font-weight: 800;
-    font-size: 22px;
-    letter-spacing: 0.5px;
-    text-transform: lowercase;
+/* LOGO SECTION */
+.logo {
+    display: flex;
+    align-items: center;
 }
 
-.blu-tag {
-    background-color: #00a8b5;
-    font-size: 12px;
-    padding: 2px 6px;
-    border-radius: 10px;
-    vertical-align: middle;
-    text-transform: uppercase;
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.main-logo {
+    height: 42px; 
+    width: auto;
+    display: block;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.logo-link:hover .main-logo {
+    transform: scale(1.02);
+}
+
+/* MENU LINKS - DIUBAH AGAR MERAPAT KE KIRI */
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin-right: auto; /* Mendorong nav-actions ke paling kanan */
+    margin-left: 40px;  /* Jarak antara logo baru dengan menu pertama */
 }
 
 .nav-links a {
@@ -57,10 +73,16 @@ body {
     padding-bottom: 4px;
 }
 
-/* GARIS KUNING DI BAWAH MENU AKTIF SEKARANG DIHAPUS (Hanya teksnya yang berubah putih terang) */
-.nav-links a:hover, .nav-links a.active {
-    color: #fff;
-    border-bottom: none; 
+/* Matikan hover garis bawah menetap pada halaman aktif */
+.nav-links a.active {
+    color: #b0c4de;
+    border-bottom: none;
+}
+
+/* Efek hover seragam untuk semua menu */
+.nav-links a:hover,
+.nav-links a.active:hover {
+    color: #ffcc00; 
 }
 
 .nav-actions {
@@ -69,7 +91,7 @@ body {
     gap: 20px;
 }
 
-/* BUTTON MY ACCOUNT (Balik Kuning Lagi Sesuai Desain Asli) */
+/* BUTTON MY ACCOUNT */
 .btn-account {
     background-color: #ffcc00; 
     border: none;
@@ -185,7 +207,7 @@ body {
     gap: 8px;
 }
 
-/* BUTTON UNDUH KARTU (Balik Kuning Lagi Sesuai Desain Asli) */
+/* BUTTON UNDUH KARTU */
 .btn-download {
     background-color: #ffcc00;
     border: none;
@@ -402,5 +424,7 @@ body {
 @media (max-width: 768px) {
     .profile-card { flex-direction: column; align-items: flex-start; gap: 20px; }
     .stats-grid { grid-template-columns: 1fr; }
-    .nav-links { display: none; }
+    /* Menjaga navigasi tetap flex di mobile agar rule margin tidak broken */
+    .nav-links { margin-left: 15px; gap: 5px; }
+    .nav-links a { margin: 0 5px; font-size: 13px; }
 }
