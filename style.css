@@ -50,27 +50,31 @@ a {
     align-items: center;
 }
 
+/* ================== LOGO BARU NAVBAR ================== */
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
 }
 
-.logo h2 {
-    font-size: 22px;
-    font-style: italic;
-    font-weight: 700;
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
 
-.badge-blu {
-    background-color: #0099CC;
-    color: white;
-    font-size: 10px;
-    padding: 4px 8px;
-    border-radius: 12px;
-    font-weight: bold;
+.main-logo {
+    /* Mengatur tinggi logo agar proporsional dengan tinggi navbar */
+    height: 42px; 
+    width: auto;
+    display: block;
+    object-fit: contain;
+    transition: transform 0.2s ease;
 }
 
+/* Efek interaktif opsional saat logo disorot mouse */
+.logo-link:hover .main-logo {
+    transform: scale(1.02);
+}
 .nav-links {
     display: flex;
     list-style: none;
@@ -83,12 +87,17 @@ a {
     font-weight: 500;
 }
 
-.nav-links a:hover, .nav-links a.active {
+.nav-links a:hover {
     color: var(--accent-yellow);
     border-bottom: 2px solid var(--accent-yellow);
     padding-bottom: 4px;
 }
 
+.nav-links a.active{
+    color: var(--accent-yellow);
+    border-bottom: 2px solid var(--accent-yellow);
+    padding-bottom: 4px;
+}
 .nav-actions {
     display: flex;
     align-items: center;
