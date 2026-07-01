@@ -1,0 +1,245 @@
+/* ================= GLOBAL VARIABLES & RESET ================= */
+:root {
+    --white: #ffffff;
+    --text-dark: #333333;
+    --text-muted: #6c757d;
+    --accent-yellow: #FFB800; /* Warna kuning tombol */
+    --navy-blue: #003366;     /* Warna latar belakang navy sesuai gambar */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body.login-page {
+    background-color: #F8F9FA;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ================= NAVBAR CSS (VERSI REPOSITORY ACTIVE) ================= */
+.navbar {
+    background-color: var(--navy-blue);
+    padding: 16px 24px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo .logo-placeholder {
+    font-size: 18px;
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
+}
+
+.logo h2 {
+    font-size: 24px;
+    color: var(--white);
+    font-weight: 700;
+    font-style: italic;
+    text-transform: lowercase;
+}
+
+/* Badge BLU Kapsul Bulat */
+.badge-blu {
+    background-color: #0088CC;
+    color: var(--white);
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 20px;
+    font-weight: 700;
+    margin-left: 4px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 28px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.65); /* Putih semi-transparan/keabuan lembut untuk menu pasif */
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+/* Menu hover dan menu aktif (Repository) diatur menjadi putih bersih dan lebih tebal */
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--white);
+    font-weight: 600;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+}
+
+.btn-yellow {
+    display: inline-block;
+    background-color: var(--accent-yellow);
+    color: #1a1a1a;
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-yellow:hover {
+    background-color: #E5A500;
+}
+
+/* ================= HALAMAN LOGIN ================= */
+.login-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.login-card {
+    background: var(--white);
+    width: 100%;
+    max-width: 480px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid #EAEAEA;
+}
+
+.login-card h1 {
+    font-size: 28px;
+    color: #001A33;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.login-subtitle {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+.login-form .form-group {
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 8px;
+}
+
+.label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forgot-link {
+    font-size: 11px;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon {
+    position: absolute;
+    left: 14px;
+    font-size: 14px;
+    color: #999999;
+    pointer-events: none;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 12px 12px 12px 42px;
+    font-size: 14px;
+    border: 1px solid #DDE2E5;
+    border-radius: 6px;
+    background-color: #F8F9FA;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.input-wrapper input:focus {
+    border-color: #0056B3;
+    background-color: var(--white);
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.form-options {
+    margin-top: 16px;
+    margin-bottom: 28px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: var(--text-dark);
+    cursor: pointer;
+    user-select: none;
+    gap: 8px;
+}
+
+.checkbox-container input {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    accent-color: var(--accent-yellow);
+}
+
+.btn-signin {
+    width: 100%;
+    background-color: var(--accent-yellow);
+    color: #1a1a1a;
+    border: none;
+    padding: 14px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-signin:hover {
+    background-color: #E5A500;
+}
+
+.btn-signin:active {
+    transform: scale(0.99);
+}
