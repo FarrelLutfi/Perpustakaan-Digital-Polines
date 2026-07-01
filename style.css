@@ -87,12 +87,17 @@ a {
     font-weight: 500;
 }
 
-.nav-links a:hover, .nav-links a.active {
+.nav-links a:hover {
     color: var(--accent-yellow);
     border-bottom: 2px solid var(--accent-yellow);
     padding-bottom: 4px;
 }
 
+.nav-links a.active{
+    color: var(--accent-yellow);
+    border-bottom: 2px solid var(--accent-yellow);
+    padding-bottom: 4px;
+}
 .nav-actions {
     display: flex;
     align-items: center;
